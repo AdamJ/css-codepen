@@ -1,0 +1,18 @@
+{
+  "name": "patternfly-styles",
+  "version": "1.0.0",
+  "description": "Simple repo to house stylesheets for CodePen examples\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy": "npm run copy-pf && npm run copy-bs",
+    "copy-pf": "cp node_modules/@patternfly/patternfly/patternfly.min.css css/",
+    "copy-bs": "cp node_modules/bootstrap/dist/css/bootstrap.min.css css/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@patternfly/patternfly": "^6.0.0",
+    "bootstrap": "^5.3.3"
+  }
+}
